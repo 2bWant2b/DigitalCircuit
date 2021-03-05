@@ -1,0 +1,40 @@
+library verilog;
+use verilog.vl_types.all;
+entity DigitalClock is
+    port(
+        led             : out    vl_logic;
+        CLK             : in     vl_logic;
+        S1              : in     vl_logic;
+        S2              : in     vl_logic;
+        S3              : in     vl_logic;
+        S4              : in     vl_logic;
+        S5              : in     vl_logic;
+        S6              : in     vl_logic;
+        S7              : in     vl_logic;
+        S8              : in     vl_logic;
+        K1              : in     vl_logic;
+        a               : out    vl_logic;
+        b               : out    vl_logic;
+        c               : out    vl_logic;
+        d               : out    vl_logic;
+        e               : out    vl_logic;
+        f               : out    vl_logic;
+        g               : out    vl_logic;
+        sel0            : out    vl_logic;
+        sel1            : out    vl_logic;
+        sel2            : out    vl_logic;
+        sel3            : out    vl_logic;
+        sel4            : out    vl_logic;
+        sel5            : out    vl_logic;
+        led_Light       : out    vl_logic;
+        clk_test        : in     vl_logic;
+        led_Freq        : in     vl_logic;
+        CLRN            : in     vl_logic;
+        time_Change     : in     vl_logic;
+        hour_UP         : in     vl_logic;
+        Switch          : in     vl_logic;
+        hour            : out    vl_logic_vector(6 downto 0);
+        min             : out    vl_logic_vector(6 downto 0);
+        sec             : out    vl_logic_vector(6 downto 0)
+    );
+end DigitalClock;
